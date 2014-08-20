@@ -23,10 +23,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `aqdqschedule`
+-- Table structure for table `agdqschedule`
 --
 
-CREATE TABLE IF NOT EXISTS `aqdqschedule` (
+CREATE TABLE IF NOT EXISTS `agdqschedule` (
   `date_and_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `game` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `runner` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -38,10 +38,10 @@ CREATE TABLE IF NOT EXISTS `aqdqschedule` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `aqdqschedule`
+-- Dumping data for table `agdqschedule`
 --
 
-INSERT INTO `aqdqschedule` (`date_and_time`, `game`, `runner`, `estimate`, `comments`, `couch_commentators`, `prizes`) VALUES
+INSERT INTO `agdqschedule` (`date_and_time`, `game`, `runner`, `estimate`, `comments`, `couch_commentators`, `prizes`) VALUES
 ('2014-06-22 12:00:00', 'Super Mario 3D World', 'SlowKingsPants', '01:49:16', '', 'Veegie64, Coolstoryliv', 'Mario Cat Ears, Princess Peach perler. Chance to win PS4 starts now and lasts through Day 4.'),
 ('2014-06-22 14:30:00', 'Crash Bandicoot: Warped', 'SSBMStuff', '00:49:06', '', '', 'SGDQ Chainmail Inlay start'),
 ('2014-06-22 15:22:00', 'Ape Escape 2', 'iongravirei', '01:06:17', 'o[8(|)', 'SSBMStuff', ''),
