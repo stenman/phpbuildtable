@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.1.4
+- http://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Aug 04, 2014 at 02:09 PM
+- Server version: 5.6.15-log
+- PHP Version: 5.5.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="perfektum_testdb" collation="utf8_unicode_ci" charset="utf8">
+            <pma:table name="aqdqschedule">
+                CREATE TABLE `aqdqschedule` (
+                  `date_and_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+                  `game` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `runner` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `estimate` time DEFAULT '00:00:00',
+                  `comments` text COLLATE utf8_unicode_ci,
+                  `couch_commentators` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `prizes` text COLLATE utf8_unicode_ci,
+                  PRIMARY KEY (`date_and_time`)
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'perfektum_testdb'
+    -->
+    <database name="perfektum_testdb">
+	    <!-- Table aqdqschedule -->
+		<table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 12:00:00</column>
+			<column name="game">Super Mario 3D World</column>
+			<column name="runner">SlowKingsPants</column>
+			<column name="estimate">1:49:16</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Veegie64, Coolstoryliv</column>
+			<column name="prizes">Mario Cat Ears, Princess Peach perler. Chance to win PS4 starts now and lasts through Day 4.</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 14:30:00</column>
+			<column name="game">Crash Bandicoot: Warped</column>
+			<column name="runner">SSBMStuff</column>
+			<column name="estimate">0:49:06</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">SGDQ Chainmail Inlay start</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 15:22:00</column>
+			<column name="game">Ape Escape 2</column>
+			<column name="runner">iongravirei</column>
+			<column name="estimate">1:06:17</column>
+			<column name="comments">o[8(|)</column>
+			<column name="couch_commentators">SSBMStuff</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 16:48:00</column>
+			<column name="game">Super Monkey Ball 2</column>
+			<column name="runner">Geoff, Miles</column>
+			<column name="estimate">0:19:52</column>
+			<column name="comments">Expert mode race</column>
+			<column name="couch_commentators">Jumpyluff</column>
+			<column name="prizes">SGDQ Chainmail Inlay end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 17:20:00</column>
+			<column name="game">Donkey Kong Country</column>
+			<column name="runner">Garrison</column>
+			<column name="estimate">0:36:51</column>
+			<column name="comments">All Stages</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Banana zip pouch, SNES bundle with boxed DKC1 and DKC2 start</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 18:03:00</column>
+			<column name="game">Donkey Kong Country 2: Diddy&#039;s Kong Quest</column>
+			<column name="runner">Garrison, Twig</column>
+			<column name="estimate">0:47:48</column>
+			<column name="comments">Race!</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Banana zip pouch, SNES bundle with boxed DKC1 and DKC2 end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 19:01:00</column>
+			<column name="game">Kirby&#039;s Dream Land</column>
+			<column name="runner">TrUShade</column>
+			<column name="estimate">0:14:36</column>
+			<column name="comments">Incentive for Extra (hard) Mode</column>
+			<column name="couch_commentators">romscout</column>
+			<column name="prizes">Soul Eater Giclee print start</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 19:25:00</column>
+			<column name="game">Kirby Super Star</column>
+			<column name="runner">Countdown42</column>
+			<column name="estimate">1:27:05</column>
+			<column name="comments">100%</column>
+			<column name="couch_commentators">romscout, Radman</column>
+			<column name="prizes">Soul Eater Giclee print end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-22 21:00:00</column>
+			<column name="game">Banjo-Tooie</column>
+			<column name="runner">Hyperresonance</column>
+			<column name="estimate">3:01:50</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Slowkingspants, Stivitybobo, AlbinoAlbotross, Cronikeys</column>
+			<column name="prizes">N64 Speedrunner Bundle: Japanese N64 with SM64, OoT, Banjo Tooie</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 0:10:00</column>
+			<column name="game">Pikmin</column>
+			<column name="runner">CaptainX24</column>
+			<column name="estimate">1:22:17</column>
+			<column name="comments">Best Ending run</column>
+			<column name="couch_commentators">Kirbymastah, doicm, Miles, CaptPikPik</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 1:45:00</column>
+			<column name="game">Jet Set Radio HD</column>
+			<column name="runner">witwix</column>
+			<column name="estimate">0:44:23</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 2:40:00</column>
+			<column name="game">Bioshock 2</column>
+			<column name="runner">BloodThunder</column>
+			<column name="estimate">1:21:06</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 4:12:00</column>
+			<column name="game">Amnesia: A Machine For Pigs</column>
+			<column name="runner">Weables, ShadowDraft</column>
+			<column name="estimate">0:37:19</column>
+			<column name="comments">Incentive for Amnesia Justine run</column>
+			<column name="couch_commentators">ShadowDraft, ProfessorBroman</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 5:07:00</column>
+			<column name="game">Goosebumps: Attack of the Mutant</column>
+			<column name="runner">pcull44444</column>
+			<column name="estimate">0:29:24</column>
+			<column name="comments">All cutscenes</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 5:52:00</column>
+			<column name="game">Pizza Pop</column>
+			<column name="runner">EggmaniMN</column>
+			<column name="estimate">0:10:29</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">MURPHGATOR!</column>
+			<column name="prizes">Samurai Pizza Cats DVD Box Set, Samurai Pizza Cats perler, Samurai Pizza Cats repro cart, Kaizou Choujin Zero repro cart, Choujin Sentai Jetman repro cart start</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 6:08:00</column>
+			<column name="game">Samurai Pizza Cats</column>
+			<column name="runner">Trogdor</column>
+			<column name="estimate">0:14:30</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">EvenSteven02, fKefka14</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 6:39:00</column>
+			<column name="game">Metal Warriors</column>
+			<column name="runner">Omnigamer</column>
+			<column name="estimate">0:22:30</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 7:06:00</column>
+			<column name="game">Kaizou Choujin Shubibinman Zero</column>
+			<column name="runner">tonic</column>
+			<column name="estimate">0:17:42</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">doicm</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 7:39:00</column>
+			<column name="game">Choujin Sentai Jetman (Power Rangers)</column>
+			<column name="runner">Guhbadoo</column>
+			<column name="estimate">0:09:59</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Lurk</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 7:54:00</column>
+			<column name="game">Mystical Ninja Starring Goemon</column>
+			<column name="runner">Pykn</column>
+			<column name="estimate">1:27:41</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">YashichiDSF</column>
+			<column name="prizes">Samurai Pizza Cats DVD Box Set, Samurai Pizza Cats perler, Samurai Pizza Cats repro cart, Kaizou Choujin Zero repro cart, Choujin Sentai Jetman repro cart end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 9:40:00</column>
+			<column name="game">Alex Kidd in Shinobi World</column>
+			<column name="runner">Deepfreeze</column>
+			<column name="estimate">0:08:47</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Btrim</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 9:54:00</column>
+			<column name="game">Castle of Illusion Starring Mickey Mouse (SMS)</column>
+			<column name="runner">btrim</column>
+			<column name="estimate">0:15:07</column>
+			<column name="comments">Start of Disney block</column>
+			<column name="couch_commentators">Deepfreeze </column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 10:15:00</column>
+			<column name="game">Aladdin (Genesis)</column>
+			<column name="runner">jymotion</column>
+			<column name="estimate">0:16:11</column>
+			<column name="comments">All Levels</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 10:38:00</column>
+			<column name="game">Crusader of Centy</column>
+			<column name="runner">Geurge</column>
+			<column name="estimate">0:50:02</column>
+			<column name="comments">Zelda-like Blast Processing action!</column>
+			<column name="couch_commentators">iongravirei</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 11:31:00</column>
+			<column name="game">Earthworm Jim</column>
+			<column name="runner">Zyre</column>
+			<column name="estimate">0:31:21</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Naegleria</column>
+			<column name="prizes">Earthworm Jim perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 12:09:00</column>
+			<column name="game">Bonus game - Ecco the Dolphin</column>
+			<column name="runner">Blueglass</column>
+			<column name="estimate">0:36:46</column>
+			<column name="comments">Buffer period #1. Potential bonus game.</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 12:52:00</column>
+			<column name="game">Pulseman</column>
+			<column name="runner">soothingplumtea</column>
+			<column name="estimate">0:34:54</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Pulseman repro cart, Pulseman perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 13:38:00</column>
+			<column name="game">Sonic the Hedgehog 2</column>
+			<column name="runner">Aleck47</column>
+			<column name="estimate">0:27:07</column>
+			<column name="comments">Start of Sonic block</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Start for Sonic perler and Sonic Genesis Bundle: Genesis with boxed copies of every single Genesis Sonic game</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 14:16:00</column>
+			<column name="game">Tails&#039; Adventure</column>
+			<column name="runner">boredeathly</column>
+			<column name="estimate">0:17:36</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 14:36:00</column>
+			<column name="game">Sonic Advance 2</column>
+			<column name="runner">Naegleria</column>
+			<column name="estimate">0:37:15</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 15:34:00</column>
+			<column name="game">Sonic Unleashed (day stages only)</column>
+			<column name="runner">BrokenArthritis</column>
+			<column name="estimate">0:47:28</column>
+			<column name="comments">Incentive for Eggmanland; end of Sonic block</column>
+			<column name="couch_commentators">PvtCb, Naegleria</column>
+			<column name="prizes">End for Sonic perler and Sonic Genesis Bundle: Genesis with boxed copies of every single Genesis Sonic game</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 16:47:00</column>
+			<column name="game">Mega Man</column>
+			<column name="runner">Adefgames</column>
+			<column name="estimate">0:22:17</column>
+			<column name="comments">Start of Mega Man block</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Start for Mad Catz cutomized Mega Man headset, Beat plushie, Tango perler, Blue Storm Giclee print</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 17:17:00</column>
+			<column name="game">Mega Man 3</column>
+			<column name="runner">Checkers</column>
+			<column name="estimate">0:35:20</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 17:57:00</column>
+			<column name="game">Mega Man 5</column>
+			<column name="runner">darkman78</column>
+			<column name="estimate">0:37:27</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 18:45:00</column>
+			<column name="game">Mega Man 6</column>
+			<column name="runner">DarkTerrex, Golden</column>
+			<column name="estimate">0:37:35</column>
+			<column name="comments">Race!</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 19:49:00</column>
+			<column name="game">Mega Man V (Gameboy)</column>
+			<column name="runner">mrcab, Virtualboyness</column>
+			<column name="estimate">0:52:58</column>
+			<column name="comments">Race! End of Mega Man block</column>
+			<column name="couch_commentators">PJ</column>
+			<column name="prizes">End for Mad Catz customized Mega Man headset, Beat plushie, Tango perler, Blue Storm Giclee print</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 20:50:00</column>
+			<column name="game">The Legend of Zelda: Four Swords Adventures</column>
+			<column name="runner">Zmaster91</column>
+			<column name="estimate">2:27:46</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Yashichi, Testrunner, KirbyMastah, 26pt2 </column>
+			<column name="prizes">Crazy Link poster by Kari Fry, The Last Arrow Giclee print</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-23 23:26:00</column>
+			<column name="game">Resident Evil 2</column>
+			<column name="runner">Carcinogen</column>
+			<column name="estimate">0:57:30</column>
+			<column name="comments">Choice of scenario</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 0:51:00</column>
+			<column name="game">System Shock 2</column>
+			<column name="runner">Cirno</column>
+			<column name="estimate">0:16:50</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Cubeface, ProfessorBroman, witwix</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 1:20:00</column>
+			<column name="game">Psychonauts</column>
+			<column name="runner">Duke Bilgewater</column>
+			<column name="estimate">0:55:06</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 2:26:00</column>
+			<column name="game">Deus Ex: Human Revolution</column>
+			<column name="runner">Xexi</column>
+			<column name="estimate">1:11:16</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Shadowdraft, EvenSteven02</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 3:50:00</column>
+			<column name="game">Sly Cooper and the Thievus Raccoonus</column>
+			<column name="runner">LovableLambchop</column>
+			<column name="estimate">1:07:36</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">VivaLaGaming, Hagspam, Mayushii</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 5:08:00</column>
+			<column name="game">Blasto</column>
+			<column name="runner">Saint Connor</column>
+			<column name="estimate">0:21:22</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">PJ</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 5:42:00</column>
+			<column name="game">Chameleon Twist</column>
+			<column name="runner">Kefka14</column>
+			<column name="estimate">0:14:37</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">KirkQ </column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 5:59:00</column>
+			<column name="game">Gex 64</column>
+			<column name="runner">AlbinoAlbatross</column>
+			<column name="estimate">1:05:19</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">NesKamikaze, Kefka14</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 7:21:00</column>
+			<column name="game">Bomberman Hero</column>
+			<column name="runner">PvtCb, Yashi, Kirkq</column>
+			<column name="estimate">0:46:19</column>
+			<column name="comments">Race!</column>
+			<column name="couch_commentators">ZachSK</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 8:21:00</column>
+			<column name="game">Treasure Master</column>
+			<column name="runner">MechaRichter</column>
+			<column name="estimate">0:29:55</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Gildersneeze, PJ, Romscout, Klaige, MURPHGATOR!</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 8:57:00</column>
+			<column name="game">Kickmaster</column>
+			<column name="runner">Zyre</column>
+			<column name="estimate">0:13:24</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">PJ, MURPHGATOR!</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 9:19:00</column>
+			<column name="game">Marble Madness</column>
+			<column name="runner">bassdeluxe27</column>
+			<column name="estimate">0:02:56</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Crak Atak</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 9:25:00</column>
+			<column name="game">Metal Storm</column>
+			<column name="runner">UraniumAnchor</column>
+			<column name="estimate">0:12:41</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Puwexil, MURPHGATOR!, lur</column>
+			<column name="prizes">Metal Storm perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 9:42:00</column>
+			<column name="game">StarTropics II: Zoda&#039;s Revenge</column>
+			<column name="runner">Guhbadoo</column>
+			<column name="estimate">1:03:14</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Sealed copy of StarTropics II</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 10:51:00</column>
+			<column name="game">Clash at Demonhead</column>
+			<column name="runner">Gildersneeze</column>
+			<column name="estimate">0:22:07</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Mecharichter, PJ</column>
+			<column name="prizes">Clash at Demonhead perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 11:20:00</column>
+			<column name="game">Arkista&#039;s Ring</column>
+			<column name="runner">Feasel</column>
+			<column name="estimate">0:16:02</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 11:40:00</column>
+			<column name="game">Rygar</column>
+			<column name="runner">Darkwing Duck</column>
+			<column name="estimate">0:26:00</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Rygar glasswork</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 12:18:00</column>
+			<column name="game">8 Eyes</column>
+			<column name="runner">Feasel</column>
+			<column name="estimate">0:23:51</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Skeleton Waiter perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 12:57:00</column>
+			<column name="game">Shatterhand</column>
+			<column name="runner">UraniumAnchor, Klaige</column>
+			<column name="estimate">0:26:18</column>
+			<column name="comments">Race!</column>
+			<column name="couch_commentators">Puwexil, MURPHGATOR!</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 14:23:00</column>
+			<column name="game">Bucky O&#039;Hare</column>
+			<column name="runner">Garrison</column>
+			<column name="estimate">0:31:12</column>
+			<column name="comments">Buffer period #2. Donation met: Guaranteed bonus game: Bucky O&#039;Hare hard mode run by Garrison. Post game interview by iateyourpie.</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 15:12:00</column>
+			<column name="game">Super Meat Boy</column>
+			<column name="runner">MattyIce3131</column>
+			<column name="estimate">1:48:44</column>
+			<column name="comments">106% run; incentive for doing a world blindfolded</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 17:23:00</column>
+			<column name="game">I Wanna Be The Boshy</column>
+			<column name="runner">witwix</column>
+			<column name="estimate">0:44:42</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Boshy perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 18:20:00</column>
+			<column name="game">Dustforce</column>
+			<column name="runner">TheBirdOfPrey</column>
+			<column name="estimate">0:42:20</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Midboss, Mapler, Doicm, Calistus</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 19:12:00</column>
+			<column name="game">Castlevania 64</column>
+			<column name="runner">Cosmo</column>
+			<column name="estimate">0:52:15</column>
+			<column name="comments">Character bid war, incentive met for Legacy of Darkness run by PvtCB</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Yokai Dracula Giclee print end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 20:38:00</column>
+			<column name="game">Castlevania: Symphony of the Night</column>
+			<column name="runner">romscout vs. Dacidbro or MechaRichter vs. zex</column>
+			<column name="estimate">0:40:54</column>
+			<column name="comments">All bosses race, Alucard vs. Richter bid war. Alucard race: Romscout: 33:11, Dacidbro: 40:54</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Yokai Dracula Giclee print end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 21:31:00</column>
+			<column name="game">Touhouvania 2</column>
+			<column name="runner">Krimmydoodle</column>
+			<column name="estimate">0:15:41</column>
+			<column name="comments">Hard mode</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 21:51:00</column>
+			<column name="game">Bunny Must Die</column>
+			<column name="runner">PinkPajamas</column>
+			<column name="estimate">0:27:16</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">BMD perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 22:25:00</column>
+			<column name="game">Guacamelee</column>
+			<column name="runner">NiL8r</column>
+			<column name="estimate">1:00:28</column>
+			<column name="comments">Incentive for Good Ending</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-24 23:36:00</column>
+			<column name="game">Bastion</column>
+			<column name="runner">Vulajin</column>
+			<column name="estimate">0:52:16</column>
+			<column name="comments">All Story Levels</column>
+			<column name="couch_commentators">Vulajin</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 0:38:00</column>
+			<column name="game">Ikachan</column>
+			<column name="runner">lurk</column>
+			<column name="estimate">0:13:56</column>
+			<column name="comments">＜コ:彡</column>
+			<column name="couch_commentators">NiL8r, ShadowDraft, Aleck47</column>
+			<column name="prizes">＜コ:彡 perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 1:03:00</column>
+			<column name="game">Eversion</column>
+			<column name="runner">UraniumAnchor</column>
+			<column name="estimate">0:17:49</column>
+			<column name="comments">Incentive for All Gems/True Ending</column>
+			<column name="couch_commentators">PvtCb, ＜コ:彡, Reed</column>
+			<column name="prizes">Eversion perler set</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 1:28:00</column>
+			<column name="game">Bleed</column>
+			<column name="runner">Studio</column>
+			<column name="estimate">0:18:10</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">ShadowDraft</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 1:55:00</column>
+			<column name="game">Dust: An Elysian Tail</column>
+			<column name="runner">Vulajin</column>
+			<column name="estimate">0:21:24</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"> MisterOgam, Alventenie</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 2:20:00</column>
+			<column name="game">Outlast</column>
+			<column name="runner">Saint Connor</column>
+			<column name="estimate">0:26:23</column>
+			<column name="comments">Incentive for all chapters</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 2:50:00</column>
+			<column name="game">Anodyne</column>
+			<column name="runner">ShadowDraft</column>
+			<column name="estimate">0:06:05</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">ProfessorBroman</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 3:15:00</column>
+			<column name="game">Giana Sisters: Twisted Dreams - Rise of the Owlverlord</column>
+			<column name="runner">crate</column>
+			<column name="estimate">0:15:50</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 3:45:00</column>
+			<column name="game">Forbidden Forest</column>
+			<column name="runner">danacrysalis</column>
+			<column name="estimate">0:05:00</column>
+			<column name="comments">Commodore 64 block. Really? Yes.</column>
+			<column name="couch_commentators">Studio, snorlax</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 3:54:00</column>
+			<column name="game">Monty on the Run</column>
+			<column name="runner">danacrysalis</column>
+			<column name="estimate">0:09:57</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Studio, snorlax</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 4:12:00</column>
+			<column name="game">MadWorld</column>
+			<column name="runner">LazerLong</column>
+			<column name="estimate">2:09:14</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Naegleria</column>
+			<column name="prizes">Mint condition MadWorld OST</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 6:28:00</column>
+			<column name="game">Ninjabread Man</column>
+			<column name="runner">SCXCR</column>
+			<column name="estimate">0:04:43</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 6:38:00</column>
+			<column name="game">Bubsy in Claws Encounters of the Furred Kind</column>
+			<column name="runner">Graviton</column>
+			<column name="estimate">0:19:42</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Sad Bubsy perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 7:04:00</column>
+			<column name="game">Zero the Kamikaze Squirrel</column>
+			<column name="runner">Omnigamer</column>
+			<column name="estimate">0:13:01</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Feasel, MURPHGATOR!, Mecharichter, PJ</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 7:24:00</column>
+			<column name="game">El Viento</column>
+			<column name="runner">Spineshark</column>
+			<column name="estimate">0:17:25</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Pair of El Viento perlers</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 7:47:00</column>
+			<column name="game">Tomba 2</column>
+			<column name="runner">CavemanDCJ</column>
+			<column name="estimate">1:17:27</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 9:13:00</column>
+			<column name="game">Spyro 2: Ripto&#039;s Rage</column>
+			<column name="runner">Jumpyluff, SSBMstuff</column>
+			<column name="estimate">0:29:43</column>
+			<column name="comments">14 Talisman race</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 10:05:00</column>
+			<column name="game">Billy Hatcher and the Giant Egg</column>
+			<column name="runner">iongravirei</column>
+			<column name="estimate">1:13:17</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">UnusualCook, AlbinoAlbatross</column>
+			<column name="prizes">BIlly Hatcher hat</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 11:31:00</column>
+			<column name="game">Mischief Makers</column>
+			<column name="runner">Jackafur</column>
+			<column name="estimate">0:57:39</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Start for Sin &amp; Punishment</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 12:38:00</column>
+			<column name="game">Guardian Heroes</column>
+			<column name="runner">Reed</column>
+			<column name="estimate">0:13:23</column>
+			<column name="comments">End of Treasure block</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">End for Sin &amp; Punishment</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 13:06:00</column>
+			<column name="game">Ninja Baseball Batman</column>
+			<column name="runner">Murphagator, Mecha Richter, Klaige and PJ</column>
+			<column name="estimate">0:30:40</column>
+			<column name="comments">Buffer period #3. Donation incentive met: Mystery Game! -&gt; Ninja Baseball Batman with Murphagator, Mecha Richter, Klaige and PJ</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 13:47:00</column>
+			<column name="game">Double Dragon Advance</column>
+			<column name="runner">Murphagator</column>
+			<column name="estimate">0:15:05</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 14:07:00</column>
+			<column name="game">Battletoads &amp; Double Dragon</column>
+			<column name="runner">PJ, MechaRichter</column>
+			<column name="estimate">0:27:21</column>
+			<column name="comments">Co-op run</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Splinter Face perler start</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 14:50:00</column>
+			<column name="game">TMNT IV: Turtles in Time</column>
+			<column name="runner">Sinister1, Mike Uyama</column>
+			<column name="estimate">0:20:24</column>
+			<column name="comments">Race!</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Splinter Face perler end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 15:16:00</column>
+			<column name="game">Super Star Wars: Return of the Jedi</column>
+			<column name="runner">Striker</column>
+			<column name="estimate">0:30:55</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 15:52:00</column>
+			<column name="game">Super Ghouls &#039;n Ghosts</column>
+			<column name="runner">PJ</column>
+			<column name="estimate">0:50:00</column>
+			<column name="comments">Weapon bid war</column>
+			<column name="couch_commentators">Mecharichter, MURPHGATOR!, Studio, Klaige</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 16:51:00</column>
+			<column name="game">The Lost Vikings</column>
+			<column name="runner">johannhowitzer</column>
+			<column name="estimate">0:57:42</column>
+			<column name="comments">1 player, 2 controllers</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">The Art of Blizzard art book start</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 18:20:00</column>
+			<column name="game">Warcraft 3: The Frozen Throne (Sentinels Campaign)</column>
+			<column name="runner">Studio</column>
+			<column name="estimate">1:07:36</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">The Art of Blizzard art book end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 19:37:00</column>
+			<column name="game">Octodad: Dadliest Catch</column>
+			<column name="runner">Ubergoose</column>
+			<column name="estimate">0:18:54</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 20:06:00</column>
+			<column name="game">La-Mulana (version bid war)</column>
+			<column name="runner">HiddenDistance or JMan</column>
+			<column name="estimate">1:54:34</column>
+			<column name="comments">Bid war between the original game and the remake</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 22:09:00</column>
+			<column name="game">Risk of Rain</column>
+			<column name="runner">Studio, LazerLong</column>
+			<column name="estimate">0:24:50</column>
+			<column name="comments">Co-op run</column>
+			<column name="couch_commentators">ShadowDraft</column>
+			<column name="prizes">Giant Bomb shirts and annual membership codes</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 22:38:00</column>
+			<column name="game">Noitu Love 2: Devolution</column>
+			<column name="runner">BlackCatGaming or CavemanDCJ</column>
+			<column name="estimate">0:27:35</column>
+			<column name="comments">Bid war, Xoda vs. Almond</column>
+			<column name="couch_commentators">Studio</column>
+			<column name="prizes">Chance to win PS4 ends now.</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-25 23:17:00</column>
+			<column name="game">Grand Theft Auto 2</column>
+			<column name="runner">Kubelwagon</column>
+			<column name="estimate">0:54:19</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 0:18:00</column>
+			<column name="game">Duke Nukem II</column>
+			<column name="runner">Bonesaw577</column>
+			<column name="estimate">0:32:12</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 1:00:00</column>
+			<column name="game">ZZT</column>
+			<column name="runner">Cosmo</column>
+			<column name="estimate">0:06:41</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 1:13:00</column>
+			<column name="game">Nitronic Rush</column>
+			<column name="runner">ChocoPoptart, Geoff, Vespher</column>
+			<column name="estimate">0:07:51</column>
+			<column name="comments">Hardcore level race after regular game.</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 1:58:00</column>
+			<column name="game">Trials Fusion</column>
+			<column name="runner">TheBlazeJp</column>
+			<column name="estimate">1:02:40</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">TheBoshos, Muzzalol, Zimbobw4y </column>
+			<column name="prizes">Brand new Trials Fusion XBox One game</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 3:22:00</column>
+			<column name="game">SSX3</column>
+			<column name="runner">CloakedYoshi</column>
+			<column name="estimate">0:20:29</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 4:04:00</column>
+			<column name="game">Tony Hawk&#039;s Pro Skater</column>
+			<column name="runner">guished, Remedy, George</column>
+			<column name="estimate">0:09:45</column>
+			<column name="comments">100% race</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 4:28:00</column>
+			<column name="game">Tony Hawk&#039;s Pro Skater 3</column>
+			<column name="runner">George</column>
+			<column name="estimate">0:08:55</column>
+			<column name="comments">All goals and golds</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 4:46:00</column>
+			<column name="game">NiGHTS into Dreams...</column>
+			<column name="runner">Miles</column>
+			<column name="estimate">0:24:00</column>
+			<column name="comments">Claris vs. Elliot bid war</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 5:14:00</column>
+			<column name="game">Mighty Switch Force</column>
+			<column name="runner">Duke Bilgewater</column>
+			<column name="estimate">0:20:49</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Shantae perlers start</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 5:53:00</column>
+			<column name="game">Shantae</column>
+			<column name="runner">Wuqinglong</column>
+			<column name="estimate">1:11:32</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">johannhowitzer</column>
+			<column name="prizes">Shantae perlers end</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 7:14:00</column>
+			<column name="game">Trip World</column>
+			<column name="runner">Wawlconut</column>
+			<column name="estimate">0:07:23</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 7:29:00</column>
+			<column name="game">Yoshi&#039;s Story</column>
+			<column name="runner">soothingplumtea</column>
+			<column name="estimate">0:22:30</column>
+			<column name="comments">All Melons</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 7:57:00</column>
+			<column name="game">New Super Mario Bros. U</column>
+			<column name="runner">ewaller</column>
+			<column name="estimate">0:41:14</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 8:43:00</column>
+			<column name="game">New Super Luigi U</column>
+			<column name="runner">wexcelsior</column>
+			<column name="estimate">0:30:00</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 9:20:00</column>
+			<column name="game">Mario Kart 64</column>
+			<column name="runner">firedragon764</column>
+			<column name="estimate">0:40:56</column>
+			<column name="comments">Buffer period #4. Donation Incentive met: Mario Kart 64</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 10:09:00</column>
+			<column name="game">Legend of Zelda: Link&#039;s Awakening DX</column>
+			<column name="runner">LeonPowalski</column>
+			<column name="estimate">1:10:11</column>
+			<column name="comments">Bonus game</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 11:31:00</column>
+			<column name="game">Legend of Zelda: Oracle of Seasons</column>
+			<column name="runner">Bananas</column>
+			<column name="estimate">2:05:46</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Oracle pack: boxed copies of Seasons and Ages with special edition comics for each game</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 13:46:00</column>
+			<column name="game">Goldeneye</column>
+			<column name="runner">l34ss l3oost</column>
+			<column name="estimate">1:10:28</column>
+			<column name="comments">00 Agent, Hard; incentive for 100%</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 15:04:00</column>
+			<column name="game">Doom 64</column>
+			<column name="runner">peaches_</column>
+			<column name="estimate">1:05:29</column>
+			<column name="comments">Incentive for Watch Me Die difficulty</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 16:18:00</column>
+			<column name="game">Halo: Combat Evolved</column>
+			<column name="runner">Goatrope</column>
+			<column name="estimate">1:51:19</column>
+			<column name="comments">Legendary</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-26 18:42:00</column>
+			<column name="game">Legend of Zelda: Skyward Sword</column>
+			<column name="runner">TLoZSR, Testrunner</column>
+			<column name="estimate">5:35:12</column>
+			<column name="comments">Post game Glitched Run: 7:15</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Skyward Sword bundle</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 0:45:00</column>
+			<column name="game">Rayman Legends</column>
+			<column name="runner">FearfulFerret, Spikevegeta, Ubergoose</column>
+			<column name="estimate">1:39:06</column>
+			<column name="comments">Race! UberGoos: 1:35:39, FearfulFerret: 1:36:00, SpikeVegeta:1:39:06</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 2:40:00</column>
+			<column name="game">Dishonored</column>
+			<column name="runner">FearfulFerret, DecidedSloth</column>
+			<column name="estimate">0:39:17</column>
+			<column name="comments">Race! Incentive for Knife of Dunwall DLC FearfulFerret: 39:00, DecidedSloth: 39:17. Knife of Dunwall 11:37 (double softlock)</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Dishonored GOTY Tarot and Playing Card Decks</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 3:37:00</column>
+			<column name="game">Fallout 3</column>
+			<column name="runner">stonenot</column>
+			<column name="estimate">0:25:57</column>
+			<column name="comments">Incentive for a run of Elder Scrolls III: Morrowind AlbinoAlbatross: 5:35</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 4:21:00</column>
+			<column name="game">Bible Adventures</column>
+			<column name="runner">Brossentia</column>
+			<column name="estimate">0:02:47</column>
+			<column name="comments">David &amp; Goliath scenario</column>
+			<column name="couch_commentators">Studio, johannhowitzer</column>
+			<column name="prizes">Start for boxed NES with zapper.</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 4:29:00</column>
+			<column name="game">Chip and Dale: Rescue Rangers 2</column>
+			<column name="runner">Sinister1, feasel</column>
+			<column name="estimate">0:16:50</column>
+			<column name="comments">1 player 2 controllers by Sinister1</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 4:59:00</column>
+			<column name="game">Bubble Bobble</column>
+			<column name="runner">Darkwing Duck, MetaSigma</column>
+			<column name="estimate">0:39:38</column>
+			<column name="comments">co-op</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Bub and Bob glass pieces</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 5:45:00</column>
+			<column name="game">Castlevania</column>
+			<column name="runner">kissmyafrocard</column>
+			<column name="estimate">0:14:25</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Puwexil, Romscout, Mecharichter</column>
+			<column name="prizes">Start for Dracula final form perler, Castlevania III heroes perler set</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 6:05:00</column>
+			<column name="game">Castlevania III: Dracula&#039;s Curse</column>
+			<column name="runner">kissmyafrocard</column>
+			<column name="estimate">0:30:07</column>
+			<column name="comments">Character bid war: Sypha run</column>
+			<column name="couch_commentators">Puwexil, Romscout, Mecharichter</column>
+			<column name="prizes">End for Dracula final form perler, Castlevania III heroes perler set</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 6:40:00</column>
+			<column name="game">Ninja Gaiden (pacifist)</column>
+			<column name="runner">Sinister1</column>
+			<column name="estimate">0:18:30</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Duckfist</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 7:02:00</column>
+			<column name="game">Ninja Gaiden III: The Ancient Ship of Doom</column>
+			<column name="runner">Crak Atak</column>
+			<column name="estimate">0:18:05</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">Duckfist</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 7:22:00</column>
+			<column name="game">Bionic Commando</column>
+			<column name="runner">PJ</column>
+			<column name="estimate">0:27:47</column>
+			<column name="comments">Incentive for 100%</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Bionic Commando comic and collector&#039;s patch set. End for boxed NES with zapper.</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 7:57:00</column>
+			<column name="game">Metal Wolf Chaos</column>
+			<column name="runner">Murphagator</column>
+			<column name="estimate">1:50:53</column>
+			<column name="comments">All cutscenes</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 10:06:00</column>
+			<column name="game">Heretic</column>
+			<column name="runner">Cubeface</column>
+			<column name="estimate">0:24:31</column>
+			<column name="comments">Hard, Episodes 1-3</column>
+			<column name="couch_commentators">Cirno, FearfulFerret</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 10:35:47</column>
+			<column name="game">Ultimate Doom</column>
+			<column name="runner">Kubelwagon, Dime</column>
+			<column name="estimate">0:28:48</column>
+			<column name="comments">Race: Dime 26:44, Kubelwagon 28:48</column>
+			<column name="couch_commentators">NiL8r, ShadowDraft, Aleck47</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 11:16:00</column>
+			<column name="game">Quake</column>
+			<column name="runner">Cubeface</column>
+			<column name="estimate">1:17:29</column>
+			<column name="comments">100% Nightmare run</column>
+			<column name="couch_commentators">Cirno, FearfulFerret</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 12:47:00</column>
+			<column name="game">Metroid Prime 1 vs. Metroid Prime 2 bid war</column>
+			<column name="runner">Miles</column>
+			<column name="estimate">1:19:54</column>
+			<column name="comments">Bid war between the first two Primes. Prime 2 wins!</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Start for Zero Suit Samus Alpaca plush, Metroid art folio, Samus Arran figure, Metroid mutations poster</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 14:33:00</column>
+			<column name="game">Metroid Fusion</column>
+			<column name="runner">kirbymastah, BioSpark, JaggerG</column>
+			<column name="estimate">1:27:37</column>
+			<column name="comments">Race! Incentive for 1% runs. Kirbymastah: 1:23:29, JaggerG: 1:27:36, Biosp4rk: 1:27:37</column>
+			<column name="couch_commentators">Dragondarch</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 16:15:00</column>
+			<column name="game">Metroid Zero Mission</column>
+			<column name="runner">kirbymastah</column>
+			<column name="estimate">1:18:50</column>
+			<column name="comments">100% run</column>
+			<column name="couch_commentators">Dragondarch, JaggerG</column>
+			<column name="prizes">End for Zero Suit Samus Alpaca plush, Metroid art folio, Samus Arran figure, Metroid mutations poster</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 17:48:00</column>
+			<column name="game">Super Mario Bros. 2 (U.S.)</column>
+			<column name="runner">cak</column>
+			<column name="estimate">0:24:23</column>
+			<column name="comments">Warpless</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Start for Wii U bundle with NSMBU and New Super Luigi U, Mad Catz customized Mario headset</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 18:30:00</column>
+			<column name="game">Super Mario Bros. 3</column>
+			<column name="runner">duckfist</column>
+			<column name="estimate">0:55:44</column>
+			<column name="comments">Warpless</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">SMB3 perler set</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 19:34:00</column>
+			<column name="game">Super Mario World</column>
+			<column name="runner">Suidt</column>
+			<column name="estimate">1:36:49</column>
+			<column name="comments">96 Exit run, incentive for all dragon coins and moons</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 21:30:00</column>
+			<column name="game">Super Mario World - No cape 3 way race</column>
+			<column name="runner">Suidt vs. Wawlconut vs. Ribbedkilla</column>
+			<column name="estimate">0:33:41</column>
+			<column name="comments">97 Exit run, incentive for all dragon coins and moons</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 22:16:00</column>
+			<column name="game">Super Mario Sunshine</column>
+			<column name="runner">Linkfan21, ChrisM, JKB</column>
+			<column name="estimate">1:26:04</column>
+			<column name="comments">Race! TheJKB: 1:23:46, 360Chrism: 1:24:44, Linkfan21: 1:26:04</column>
+			<column name="couch_commentators">Snarfybobo, FireDragon764</column>
+			<column name="prizes">End for Wii U bundle with NSMBU and New Super Luigi U, Mad Catz customized Mario headset</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-27 23:54:00</column>
+			<column name="game">Super Mario 64</column>
+			<column name="runner">Siglemic</column>
+			<column name="estimate">1:48:57</column>
+			<column name="comments">120 Star run</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 1:42:57</column>
+			<column name="game">Paper Mario: The Thousand Year Door</column>
+			<column name="runner">Almolicious</column>
+			<column name="estimate">5:43:33</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">TaylorTotFTW, Headstrong1290 and Iateyourpie</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 7:52:00</column>
+			<column name="game">Pokemon Puzzle Challenge</column>
+			<column name="runner">unusualcook, Bbforky</column>
+			<column name="estimate">0:25:13</column>
+			<column name="comments">Intense Difficulty. Incentive to run Pokemon Snap</column>
+			<column name="couch_commentators"> ilikebeingsmart </column>
+			<column name="prizes">Start for Pikachu N64 Controller, X/Y Mega Diance print, Pokemon Movie Vinyl Records, signed copy of Kanto Field Guide</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 9:00:00</column>
+			<column name="game">Pokemon Red vs. Pokemon Gold</column>
+			<column name="runner">Shenanagans, MexiricanBassMonkey</column>
+			<column name="estimate">0:55:08</column>
+			<column name="comments">Bid war between Gen 1 and Gen 2, incentive for Yellow glitched run. Pokemon Gold wins, Pokemon Yellow Glitched 0:02:37</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">End for Pikachu N64 Controller, X/Y Mega Diance print, Pokemon Movie Vinyl Records, signed copy of Kanto Field Guide</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 10:15:00</column>
+			<column name="game">Mega Man Zero 2</column>
+			<column name="runner">Kuribon</column>
+			<column name="estimate">0:58:25</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">MitoRequium, Branch</column>
+			<column name="prizes">Start for SNES bundle with boxed copies of X1 and X2, 3D popout artwork of X1, Vile figure, X2 perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 11:35:00</column>
+			<column name="game">Mega Man X</column>
+			<column name="runner">Tiki, CalebHart</column>
+			<column name="estimate">0:32:38</column>
+			<column name="comments">Race! Caleb 32:26, Tiki: 32:38</column>
+			<column name="couch_commentators">MetaSigma, romscout</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 12:23:00</column>
+			<column name="game">Mega Man X2</column>
+			<column name="runner">CalebHart, Iateyourpie, Ivan, Trogdor</column>
+			<column name="estimate">0:36:51</column>
+			<column name="comments">Race! CalebHart: 35:01 Trogdor: 35:22 Ivan: 35:40 Iateyourpie: 36:51</column>
+			<column name="couch_commentators">Tiki, Striker</column>
+			<column name="prizes">End for SNES bundle with boxed copies of X1 and X2, 3D popout artwork of X1, Vile figure, X2 perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 13:11:00</column>
+			<column name="game">Half-Life</column>
+			<column name="runner">Cubeface</column>
+			<column name="estimate">0:37:52</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">z1mb0bw4y, Cirno, FearfulFerret</column>
+			<column name="prizes">Start for Orange Box signed by Valve staff (including Gabe and Robin), Mad Catz customized Half-Life headset</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 13:55:00</column>
+			<column name="game">Half-Life 2</column>
+			<column name="runner">Gocnak</column>
+			<column name="estimate">1:43:47</column>
+			<column name="comments"></column>
+			<column name="couch_commentators">z1mb0bw4y, YetiRevolution</column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 15:49:00</column>
+			<column name="game">Portal</column>
+			<column name="runner">Norferzlo, z1mb0bw4y</column>
+			<column name="estimate">0:10:37</column>
+			<column name="comments">Race! Z1mb0bw4y: 10:37, Norferzlo: Crashed game.</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Start for Portal X-Stitch Magnets</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 16:10:00</column>
+			<column name="game">Portal 2</column>
+			<column name="runner">Phxntxm</column>
+			<column name="estimate">0:45:55</column>
+			<column name="comments">&quot;Solo co-op&quot;; one player completes co-op mode</column>
+			<column name="couch_commentators">Z1mb0bw4y, Gocnak, and Cirno </column>
+			<column name="prizes">End for Portal X-Stitch Magnets, Orange Box signed by Valve staff (including Gabe and Robin), Mad Catz customized Half-Life headset</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 17:07:00</column>
+			<column name="game">Legend of Zelda: A Link to the Past</column>
+			<column name="runner">Andy, Jadin</column>
+			<column name="estimate">1:19:21</column>
+			<column name="comments">Any% no out of bounds. Incentive for Any% no Exploration Glitch run by Jadin. Jadin&#039;s run: 37:47 (impossible gap walk!!!!) Andy EG%: 2:43</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Start for 3DS XL bundle with A Link Between Worlds, Zelda Treasure Chest purse, Master Sword perlers, WInd Waker Fado and Makar poster</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 19:25:00</column>
+			<column name="game">Legend of Zelda: A Link Between Worlds</column>
+			<column name="runner">Zandergoth</column>
+			<column name="estimate">1:48:11</column>
+			<column name="comments"></column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">End for 3DS XL bundle with A Link Between Worlds, Zelda Treasure Chest purse, Master Sword perlers, WInd Waker Fado and Makar poster</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 21:32:00</column>
+			<column name="game">Legend of Zelda: Ocarina of Time</column>
+			<column name="runner">Cosmo, Skater</column>
+			<column name="estimate">0:21:10</column>
+			<column name="comments">Race! Cosmo 21:10 Skater DNF</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes"></column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 22:06:00</column>
+			<column name="game">Super Metroid</column>
+			<column name="runner">zoast, Ivan</column>
+			<column name="estimate">0:56:43</column>
+			<column name="comments">Low% run, incentive for glitched any%. Ivan glitched any%: 17:11</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Zero Suit Samus figure, The Queen Giclee print</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-28 23:35:00</column>
+			<column name="game">Final Fantasy VI</column>
+			<column name="runner">Essentia, puwexil</column>
+			<column name="estimate">7:27:49</column>
+			<column name="comments">Co-op, incentive for 100% Brossentia Sketch Glitch pre run: 21:40</column>
+			<column name="couch_commentators">Brossentia, MisterMV</column>
+			<column name="prizes">FF6 Fresco by Orioto prints, Kaiser Dragon perler</column>
+        </table>
+        <table name="aqdqschedule">
+			<column name="date_and_time">2014-06-29 7:02:49</column>
+			<column name="game">Finale</column>
+			<column name="runner">everyone</column>
+			<column name="estimate">0:05:00</column>
+			<column name="comments">If we have enough energy to last 5 minutes, it&#039;s a miracle</column>
+			<column name="couch_commentators"></column>
+			<column name="prizes">Grand Prize Bundle: Wii U and 3DS XL with custom SGDQ design</column>
+        </table>
+    </database>
+</pma_xml_export>
