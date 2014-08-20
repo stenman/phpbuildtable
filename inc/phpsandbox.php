@@ -23,7 +23,7 @@
 <body>
 
 	<h1>Hello World</h1>
-	<table id="table_csv" class="display">
+	<table id="table_agdq" class="display">
 
 		<thead>
 			<tr>	
@@ -45,16 +45,14 @@
 			$pass = 'letmein';
 			$db = 'agdq_db';
 
-			/* Select queries return a resultset */
 			try{
 				$dbh = getConnected($host,$user,$pass,$db);
-
-				$stmt = $dbh->prepare("SELECT * FROM agdq_big");
-
-				/*$stmt->bindParam(':param1', $param1, PDO::PARAM_INT);*/
+				$stmt = $dbh->prepare("SELECT * FROM agdqschedule");
 				$stmt->execute();
-				while($row = $stmt->fetch())
-				{
+
+				$result = $stmt->fetchAll();
+
+				foreach($result as $row){
 					echo "<tr>";
 					echo "<td>" . htmlspecialchars($row['date_and_time']) . "</td>";
 					echo "<td>" . htmlspecialchars($row['game']) . "</td>";
@@ -72,26 +70,6 @@
 				error_log($e->getMessage(),0);
 			}
 
-/*			$date = new DateTime('2010-01-01 12:00:00');
-
-			for ($i=0; $i < 50000; $i++) { 
-
-				$date->add(new DateInterval('PT1H'));
-				$date = mysql_real_escape_string($date);
-				echo $date->format('Y-m-d H:i:s')."<br>";
-
-				$insert_query = 'INSERT INTO agdq_big'.
-				'(date_and_time, game, runner, estimate, comments, couch_commentators, prizes)'.
-				'VALUES ($date, "New record", "A cool running man", "01:49:16", "", "Veegie64, Coolstoryliv", "Some Stuff")';
-
-				if ($result = $db_connection->query($insert_query)) {
-					echo 'Success!';
-				}
-				else{
-					echo 'Fail!';
-				}
-			}*/
-
 			$dbh -> connection = null;
 
 			function getConnected($host,$user,$pass,$db) {
@@ -106,19 +84,6 @@
 					error_log($e->getMessage(),0);
 				}
 				return $pdo;
-			}
-
-			function getConnectedmysqli($host,$user,$pass,$db) {
-
-				$mysqli = new mysqli($host, $user, $pass, $db);
-
-				/* check connection */
-				if ($mysqli->connect_errno) {
-					printf("Connect failed: %s\n", $mysqli->connect_error);
-					exit();
-				}
-
-				return $mysqli;
 			}
 
 			?>

@@ -23,7 +23,7 @@
 <body>
 
 	<h1>AGDQ Summer Marathon 2014 Schedule</h1>
-	<table id="table_csv" class="display" width="100%">
+	<table id="table_agdq" class="display" width="100%">
 
 		<thead>
 			<tr>	
