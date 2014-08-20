@@ -14,7 +14,7 @@
 
 	<!-- DataTables -->
 	<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.2/media/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" charset="utf8" src="../js/datatablesinit_table_csv.js"></script>
+	<script type="text/javascript" charset="utf8" src="../js/datatables_init.js"></script>
 
 	<!-- DataTables CSS -->
 	<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.2/media/js/dataTables.jqueryui.js"></script>
@@ -23,7 +23,7 @@
 <body>
 
 	<h1>AGDQ Summer Marathon 2014 Schedule</h1>
-	<table id="table_csv" class="display" cellspacing="0" width="100%">
+	<table id="table_csv" class="display" width="100%">
 
 		<thead>
 			<tr>	
@@ -38,7 +38,7 @@
 		</thead>
 
 		<tbody>
-			<?php include "fromxml.php"; ?>
+			<?php include "fromdb_pdo.php"; ?>
 		</tbody>
 
 	</table>

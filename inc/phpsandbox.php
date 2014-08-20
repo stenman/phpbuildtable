@@ -14,7 +14,7 @@
 
 	<!-- DataTables -->
 	<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.2/media/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" charset="utf8" src="../js/datatablesinit_table_csv.js"></script>
+	<script type="text/javascript" charset="utf8" src="../js/datatables_init.js"></script>
 
 	<!-- DataTables CSS -->
 	<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.2/media/js/dataTables.jqueryui.js"></script>
@@ -45,14 +45,15 @@
 			$pass = 'letmein';
 			$db = 'agdq_db';
 
-			$db_connection = getConnected($host,$user,$pass,$db);
-
-			$q = "SELECT * FROM agdqschedule";
-
 			/* Select queries return a resultset */
-			if ($result = $db_connection->query($q)) {
+			try{
+				$dbh = getConnected($host,$user,$pass,$db);
 
-				while($row = $result->fetch_array())
+				$stmt = $dbh->prepare("SELECT * FROM agdq_big");
+
+				/*$stmt->bindParam(':param1', $param1, PDO::PARAM_INT);*/
+				$stmt->execute();
+				while($row = $stmt->fetch())
 				{
 					echo "<tr>";
 					echo "<td>" . htmlspecialchars($row['date_and_time']) . "</td>";
@@ -65,13 +66,49 @@
 					echo "</tr>";
 				}
 
-				/* free result set */
-				$result->close();
+			}
+			catch(PDOException $e)
+			{
+				error_log($e->getMessage(),0);
 			}
 
-			$db_connection -> close();
+/*			$date = new DateTime('2010-01-01 12:00:00');
+
+			for ($i=0; $i < 50000; $i++) { 
+
+				$date->add(new DateInterval('PT1H'));
+				$date = mysql_real_escape_string($date);
+				echo $date->format('Y-m-d H:i:s')."<br>";
+
+				$insert_query = 'INSERT INTO agdq_big'.
+				'(date_and_time, game, runner, estimate, comments, couch_commentators, prizes)'.
+				'VALUES ($date, "New record", "A cool running man", "01:49:16", "", "Veegie64, Coolstoryliv", "Some Stuff")';
+
+				if ($result = $db_connection->query($insert_query)) {
+					echo 'Success!';
+				}
+				else{
+					echo 'Fail!';
+				}
+			}*/
+
+			$dbh -> connection = null;
 
 			function getConnected($host,$user,$pass,$db) {
+
+				try {
+					$pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+					$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+					$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+				}
+				catch(PDOException $e)
+				{
+					error_log($e->getMessage(),0);
+				}
+				return $pdo;
+			}
+
+			function getConnectedmysqli($host,$user,$pass,$db) {
 
 				$mysqli = new mysqli($host, $user, $pass, $db);
 
