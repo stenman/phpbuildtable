@@ -40,9 +40,22 @@
 		<tbody>
 			<?php
 
-			$table = simplexml_load_file('../res/agdqschedulesummer2014.xml');
+			function getConnected() {
+				$host = 'localhost';
+				$user = 'logintest';
+				$pass = 'logintest';
+				$db = 'vibo';
 
-			foreach ($table->row as $cell) {
+				$mysqli = new mysqli($host, $user, $pass, $db);
+
+				if($mysqli->connect_error) {
+					die('Connect Error (' . mysqli_connect_errno() . ') '
+						. mysqli_connect_error());
+				}
+			}
+
+			/*$table = get_table_from_DB_here;*/
+/*			foreach ($table->row as $cell) {
 				echo "<tr>";
 				echo "<td>" . htmlspecialchars($cell->dateandtime) . "</td>";
 				echo "<td>" . htmlspecialchars($cell->game) . "</td>";
@@ -53,7 +66,7 @@
 				echo "<td>" . htmlspecialchars($cell->prizes) . "</td>";
 				echo "</tr>";
 			}
-
+*/
 			?>
 		</tbody>
 
