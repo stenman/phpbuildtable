@@ -40,7 +40,6 @@
 		<tbody>
 			<?php include "fromdb_pdo.php"; ?>
 		</tbody>
-
 	</table>
 </body>
 </html>
