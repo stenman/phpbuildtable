@@ -105,8 +105,8 @@ class SSP {
 
 				if ( $requestColumn['orderable'] == 'true' ) {
 					$dir = $request['order'][$i]['dir'] === 'asc' ?
-						'ASC' :
-						'DESC';
+					'ASC' :
+					'DESC';
 
 					$orderBy[] = '`'.$column['db'].'` '.$dir;
 				}
@@ -164,31 +164,31 @@ class SSP {
 			$str = $requestColumn['search']['value'];
 
 			if ( $requestColumn['searchable'] == 'true' &&
-			 $str != '' ) {
+				$str != '' ) {
 				$binding = self::bind( $bindings, '%'.$str.'%', PDO::PARAM_STR );
-				$columnSearch[] = "`".$column['db']."` LIKE ".$binding;
-			}
+			$columnSearch[] = "`".$column['db']."` LIKE ".$binding;
 		}
+	}
 
 		// Combine the filters into a single string
-		$where = '';
+	$where = '';
 
-		if ( count( $globalSearch ) ) {
-			$where = '('.implode(' OR ', $globalSearch).')';
-		}
-
-		if ( count( $columnSearch ) ) {
-			$where = $where === '' ?
-				implode(' AND ', $columnSearch) :
-				$where .' AND '. implode(' AND ', $columnSearch);
-		}
-
-		if ( $where !== '' ) {
-			$where = 'WHERE '.$where;
-		}
-
-		return $where;
+	if ( count( $globalSearch ) ) {
+		$where = '('.implode(' OR ', $globalSearch).')';
 	}
+
+	if ( count( $columnSearch ) ) {
+		$where = $where === '' ?
+		implode(' AND ', $columnSearch) :
+		$where .' AND '. implode(' AND ', $columnSearch);
+	}
+
+	if ( $where !== '' ) {
+		$where = 'WHERE '.$where;
+	}
+
+	return $where;
+}
 
 
 	/**
@@ -218,23 +218,23 @@ class SSP {
 		// Main query to actually get the data
 		$data = self::sql_exec( $db, $bindings,
 			"SELECT SQL_CALC_FOUND_ROWS `".implode("`, `", self::pluck($columns, 'db'))."`
-			 FROM `$table`
-			 $where
-			 $order
-			 $limit"
-		);
+			FROM `$table`
+			$where
+			$order
+			$limit"
+			);
 
 		// Data set length after filtering
 		$resFilterLength = self::sql_exec( $db,
 			"SELECT FOUND_ROWS()"
-		);
+			);
 		$recordsFiltered = $resFilterLength[0][0];
 
 		// Total data set length
 		$resTotalLength = self::sql_exec( $db,
 			"SELECT COUNT(`{$primaryKey}`)
-			 FROM   `$table`"
-		);
+			FROM   `$table`"
+			);
 		$recordsTotal = $resTotalLength[0][0];
 
 		/*
@@ -245,7 +245,7 @@ class SSP {
 			"recordsTotal"    => intval( $recordsTotal ),
 			"recordsFiltered" => intval( $recordsFiltered ),
 			"data"            => self::data_output( $columns, $data )
-		);
+			);
 	}
 
 
@@ -268,13 +268,13 @@ class SSP {
 				$sql_details['user'],
 				$sql_details['pass'],
 				array( PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION )
-			);
+				);
 		}
 		catch (PDOException $e) {
 			self::fatal(
 				"An error occurred while connecting to the database. ".
 				"The error reported by the server was: ".$e->getMessage()
-			);
+				);
 		}
 
 		return $db;
@@ -336,9 +336,9 @@ class SSP {
 	 */
 	static function fatal ( $msg )
 	{
-		echo json_encode( array( 
+		echo json_encode( array(
 			"error" => $msg
-		) );
+			) );
 
 		exit(0);
 	}
@@ -361,14 +361,14 @@ class SSP {
 			'key' => $key,
 			'val' => $val,
 			'type' => $type
-		);
+			);
 
 		return $key;
 	}
 
 
 	/**
-	 * Pull a particular property from each assoc. array in a numeric array, 
+	 * Pull a particular property from each assoc. array in a numeric array,
 	 * returning and array of the property values from each item.
 	 *
 	 *  @param  array  $a    Array to get data from
@@ -386,4 +386,3 @@ class SSP {
 		return $out;
 	}
 }
-

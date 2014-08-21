@@ -14,16 +14,18 @@
 
 	<!-- DataTables -->
 	<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.2/media/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.2/extensions/Scroller/js/dataTables.scroller.min.js"></script>
 	<script type="text/javascript" charset="utf8" src="../js/datatables_init.js"></script>
+	<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.2/media/js/dataTables.jqueryui.js"></script>
 
 	<!-- DataTables CSS -->
-	<script type="text/javascript" charset="utf8" src="../js/DataTables-1.10.2/media/js/dataTables.jqueryui.js"></script>
 	<link rel="stylesheet" type="text/css" href="../js/DataTables-1.10.2/media/css/dataTables.jqueryui.css">
+	<link rel="stylesheet" type="text/css" href="../js/DataTables-1.10.2/extensions/Scroller/css/dataTables.scroller.min.css">
 </head>
 <body>
 
 	<h1>AGDQ Summer Marathon 2014 Schedule</h1>
-	<table id="table_agdq"	>
+	<table id="table_agdq" class="display" cellspacing="0" cellpadding="0" border="0" width="100%">
 
 		<thead>
 			<tr>

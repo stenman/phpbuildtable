@@ -1,21 +1,21 @@
 <?php
 /*
- * DataTables example server-side processing script.
- *
- * Please note that this script is intentionally extremely simply to show how
- * server-side processing can be implemented, and probably shouldn't be used as
- * the basis for a large complex system. It is suitable for simple use cases as
- * for learning.
- *
- * See http://datatables.net/usage/server-side for full details on the server-
- * side processing requirements of DataTables.
- *
- * @license MIT - http://datatables.net/license_mit
- */
+* DataTables example server-side processing script.
+*
+* Please note that this script is intentionally extremely simply to show how
+* server-side processing can be implemented, and probably shouldn't be used as
+* the basis for a large complex system. It is suitable for simple use cases as
+* for learning.
+*
+* See http://datatables.net/usage/server-side for full details on the server-
+* side processing requirements of DataTables.
+*
+* @license MIT - http://datatables.net/license_mit
+*/
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * Easy set variables
- */
+* Easy set variables
+*/
 
 // DB table to use
 $table = 'agdq_big';
@@ -28,28 +28,28 @@ $primaryKey = 'date_and_time';
 // parameter represents the DataTables column identifier. In this case simple
 // indexes
 $columns = array(
-    array( 'db' => 'date_and_time', 'dt' => 'dateandtime' ),
-    array( 'db' => 'game', 'dt' => 'game' ),
-    array( 'db' => 'runner', 'dt' => 'runner' )
-/*    array( 'db' => 'estimate', 'dt' => 'estimate' ),
-    array( 'db' => 'comments', 'dt' => 'comments' ),
-    array( 'db' => 'couch_commentators', 'dt' => 'couchcommentators' ),
-    array( 'db' => 'prizes', 'dt' => 'prizes' )
-*/    );
+    array( 'db' => 'date_and_time', 'dt' => 0 ),
+    array( 'db' => 'game', 'dt' => 1 ),
+    array( 'db' => 'runner', 'dt' => 2 ),
+    array( 'db' => 'estimate', 'dt' => 3 ),
+    array( 'db' => 'comments', 'dt' => 4 ),
+    array( 'db' => 'couch_commentators', 'dt' => 5 ),
+    array( 'db' => 'prizes', 'dt' => 6 )
+    );
 
 // SQL server connection information
-    $sql_details = array(
-        'user' => 'phpbuildtableapp',
-        'pass' => 'letmein',
-        'db'   => 'agdq_db',
-        'host' => '127.0.0.1'
-        );
+$sql_details = array(
+    'user' => 'phpbuildtableapp',
+    'pass' => 'letmein',
+    'db'   => 'agdq_db',
+    'host' => '127.0.0.1'
+    );
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * If you just want to use the basic configuration for DataTables with PHP
- * server-side, there is no need to edit below this line.
- */
+* If you just want to use the basic configuration for DataTables with PHP
+* server-side, there is no need to edit below this line.
+*/
 
 require( 'ssp.class.php' );
 
