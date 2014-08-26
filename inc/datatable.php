@@ -25,6 +25,11 @@
 	<h1>AGDQ Summer Marathon 2014 Schedule</h1>
 	<table id="table_agdq" class="display" width="100%">
 
+		<form action="manage_records_processor.php" method="post">Enter a number: <input type="text" name="nrecords" size="3"> <br> 
+			<input type="submit" name="insert" value="Add 5"> 
+			<input type="submit" name="delete" value="Subtract 5"> 
+		</form>
+
 		<thead>
 			<tr>	
 				<th>Date and Time</th>

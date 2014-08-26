@@ -18,7 +18,7 @@
 */
 
 // DB table to use
-$table = 'agdq_big';
+$table = 'agdqschedule';
 
 // Table's primary key
 $primaryKey = 'date_and_time';
