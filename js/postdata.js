@@ -1,30 +1,60 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-  // process the form
-  $('form').submit(function(event) {
+  var request;
 
-    var formData = {
-      'insert'        : $('input[insert=insert]').val(),
-    };
+  $("#form_manage_records").submit(function() { return false; });
 
-    // process the form
-    $.ajax({
-      type    : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-      url     : '../inc/utilities/process.php', // the url where we want to POST
-      data    : formData, // our data object
-      dataType  : 'json', // what type of data do we expect back from the server
-      encode          : true
-    })
-      // using the done promise callback
-      .done(function(data) {
+  $('.btn_submit').click(function(event) {
 
-        // log data to the console so we can see
-        console.log(data); 
+    if (request) {
+      request.abort();
+    }
 
-        // here we will handle errors and validation messages
-      });
+    var $form = $(this).parent().parent("form");
+    var $inputs = $form.find("input, select, button, textarea");
+    var serializedData = $form.serialize();
 
-    // stop the form from submitting the normal way and refreshing the page
+    $inputs.prop("disabled", true);
+
+    $('.form-group').removeClass('has-error');
+    $('.help-block').remove();
+    $('.alert-success').remove();
+
+    request = $.ajax({
+      type    : 'POST', 
+      url     : 'utilities/process.php',
+      data    : serializedData + "&"+ $(this).attr("name")+"=true", 
+      dataType  : 'json', 
+      encode    : true
+    });
+
+    request.done(function(data, response, textStatus, jqXHR) {
+
+      console.log(data); 
+
+      if (!data.success) {
+        if (data.errors.insert) {
+          $('.form-group').addClass('has-error'); 
+          $('.form-group').append('<div class="help-block">' + data.errors.insert + '</div>'); 
+        }
+        if (data.errors.delete) {
+          $('.form-group').addClass('has-error');
+          $('.form-group').append('<div class="help-block">' + data.errors.delete + '</div>'); 
+        }
+      } else {
+        $('#form_manage_records').append('<div class="alert-success">' + data.message + '</div>');
+      }
+    });
+
+    request.fail(function(jqXHR, textStatus, errorThrown) {
+      // NOTE: remove this before production?
+      console.error("The following error occured: "+textStatus, errorThrown);
+    });
+
+    request.always(function () {
+      $inputs.prop("disabled", false);
+    });
+
     event.preventDefault();
   });
 });
