@@ -32,7 +32,6 @@
 <body>
 
 	<h1>AGDQ Summer Marathon 2014 Schedule</h1>
-
 	<div class="form-group">
 		<form id="form_manage_records" action="utilities/process.php" method="post">
 			<div id="insert-group">
@@ -58,10 +57,6 @@
 					<th>Prizes</th>
 				</tr>
 			</thead>
-
-			<!-- 			<tbody> -->
-			<!-- 			<?php include "fromdb_pdo.php"; ?> -->
-			<!-- 			</tbody> -->
 		</table>
 	</div>
 </body>

@@ -11,10 +11,13 @@ try{
 
 	$dbh = getConnected($host,$user,$pass,$db);
 
-	for ($i=0; $i < 5; $i++) { 
+	for ($i=0; $i < 50000; $i++) { 
+
 		$date->add(new DateInterval('PT1H'));
 		$datestring = $date->format('Y-m-d H:i:s');
-		$stmt = $dbh->prepare("INSERT INTO agdqschedule (date_and_time, game, runner, estimate, comments, couch_commentators, prizes) VALUES (:dateandtime, 'New record', 'A cool running man', '01:49:16', '', 'Veegie64, Coolstoryliv', 'Some Stuff')");
+
+		$stmt = $dbh->prepare("INSERT INTO agdq_big (date_and_time, game, runner, estimate, comments, couch_commentators, prizes) VALUES (:dateandtime, 'New record', 'A cool running man', '01:49:16', '', 'Veegie64, Coolstoryliv', 'Some Stuff')");
+
 		$stmt->bindParam(":dateandtime", $datestring, PDO::PARAM_STR);
 		$stmt->execute();
 	}

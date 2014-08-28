@@ -1,6 +1,6 @@
 .form-group{
 	width: 80%;
-	height: 200px;
+	height: 100px;
 	background: aqua;
 	margin: auto;
 	padding: 10px;
@@ -8,13 +8,13 @@
 
 #insert-group{
 	width: 15%;
-	height: 200px;
+	height: 100px;
 	background: red;
 	float: left;
 }
 
 #delete-group{
 	margin-left: 15%;
-	height: 200px;
+	height: 100px;
 	background: black;
 }
