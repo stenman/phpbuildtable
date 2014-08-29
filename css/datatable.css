@@ -1,20 +1,30 @@
 .form-group{
-	width: 80%;
-	height: 100px;
-	background: aqua;
-	margin: auto;
-	padding: 10px;
+    width: 100%;
+    margin: auto;
 }
 
 #insert-group{
-	width: 15%;
-	height: 100px;
-	background: red;
-	float: left;
+    float: left;
+    height: 25px;
+    padding: 3px 3px 3px 5px;
+    border-radius: 5px 0px 0px 5px;
+    border-top: 2px solid #999999;
+    border-bottom: 2px solid #eeeeee;
+    border-left: 2px solid #999999;
+    background: linear-gradient(#dfeffc, #eff7fd);
+}
+
+#textbox{
+    border-radius: 5px 5px 5px 5px;
 }
 
 #delete-group{
-	margin-left: 15%;
-	height: 100px;
-	background: black;
+    float: left;
+    height: 25px;
+    padding: 3px 5px 3px 3px;
+    border-radius: 0px 5px 5px 0px;
+    border-top: 2px solid #999999;
+    border-right: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+    background: linear-gradient(#dfeffc, #eff7fd);
 }

@@ -35,7 +35,7 @@
 	<div class="form-group">
 		<form id="form_manage_records" action="utilities/process.php" method="post">
 			<div id="insert-group">
-				<input type="text" name="nrecords" size="18" placeholder="1 to 50000">
+				<input type="text" id="textbox" name="nrecords" size="18" placeholder="1 to 50000">
 				<input type="submit" class="btn_submit" name="insert" value="Insert Records"> 
 			</div>
 			<div id="delete-group">
