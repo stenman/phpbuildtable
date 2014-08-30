@@ -10,6 +10,7 @@ function insertrecords(){
 	$date = new DateTime('2000-01-01 12:00:00');
 
 	try{
+		include 'get_connected.php';
 		$dbh = getConnected($host,$user,$pass,$db);
 
 		for ($i=0; $i < 5; $i++) { 
@@ -31,19 +32,4 @@ function insertrecords(){
 
 	$dbh -> connection = null;
 }
-
-function getConnected($host,$user,$pass,$db) {
-
-	try {
-		$pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-	}
-	catch(PDOException $e)
-	{
-		error_log($e->getMessage(),0);
-	}
-	return $pdo;
-}
-
 ?>
