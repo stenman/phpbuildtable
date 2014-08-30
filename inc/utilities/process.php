@@ -29,7 +29,7 @@ else{
 
 		include 'insert_records.php';
 
-		insertrecords();
+		insertrecords($numberofrecords);
 
 		$data['success'] = true;
 		$data['message'] = "Inserted {$numberofrecords} record(s)!";

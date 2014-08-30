@@ -1,6 +1,6 @@
 <?php
 
-function insertrecords(){
+function insertrecords($nrecords){
 
 	$host = '127.0.0.1';
 	$user = 'phpbuildtableapp';
@@ -13,7 +13,7 @@ function insertrecords(){
 		include 'get_connected.php';
 		$dbh = getConnected($host,$user,$pass,$db);
 
-		for ($i=0; $i < 5; $i++) { 
+		for ($i=0; $i < $nrecords; $i++) { 
 
 			$date->add(new DateInterval('PT1H'));
 			$datestring = $date->format('Y-m-d H:i:s');
