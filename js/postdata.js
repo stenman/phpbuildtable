@@ -44,6 +44,9 @@ $(document).ready(function() {
       } else {
         $('#form_manage_records').append('<div class="alert-success">' + data.message + '</div>');
       }
+
+      //RELOAD TABLE HERE
+
     });
 
     request.fail(function(jqXHR, textStatus, errorThrown) {

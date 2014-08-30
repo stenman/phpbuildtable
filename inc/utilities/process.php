@@ -3,6 +3,7 @@
 $numberofrecords = $_POST["nrecords"];
 $errors = array();
 $data = array();
+$affectedrecords = 0;
 
 // validation ==================================================================
 
@@ -29,19 +30,19 @@ else{
 
 		include 'insert_records.php';
 
-		insertrecords($numberofrecords);
+		$affectedrecords = insertrecords($numberofrecords);
 
 		$data['success'] = true;
-		$data['message'] = "Inserted {$numberofrecords} record(s)!";
+		$data['message'] = "Inserted {$affectedrecords} record(s)!";
 	} 
 	else if (isset($_POST['delete'])) {
 
 		include 'delete_records.php';
 
-		deleterecords();
+		$affectedrecords = deleterecords();
 
 		$data['success'] = true;
-		$data['message'] = "Deleted records!";
+		$data['message'] = "Deleted {$affectedrecords} records!";
 	}
 	else{
 		$data['success'] = false;
