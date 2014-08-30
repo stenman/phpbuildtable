@@ -32,8 +32,15 @@ else{
 
 		$affectedrecords = insertrecords($numberofrecords);
 
-		$data['success'] = true;
-		$data['message'] = "Inserted {$affectedrecords} record(s)!";
+		if($affectedrecords < 1){
+			$errors['insert'] = 'No records were inserted!';
+			$data['success'] = false;
+			$data['errors'] = $errors;
+		}
+		else{
+			$data['success'] = true;
+			$data['message'] = "Inserted {$affectedrecords} record(s)!";
+		}
 	} 
 	else if (isset($_POST['delete'])) {
 
@@ -41,8 +48,15 @@ else{
 
 		$affectedrecords = deleterecords();
 
-		$data['success'] = true;
-		$data['message'] = "Deleted {$affectedrecords} records!";
+		if($affectedrecords < 1){
+			$errors['delete'] = 'No records were deleted!';
+			$data['success'] = false;
+			$data['errors'] = $errors;
+		}
+		else{
+			$data['success'] = true;
+			$data['message'] = "Deleted {$affectedrecords} record(s)!";
+		}
 	}
 	else{
 		$data['success'] = false;

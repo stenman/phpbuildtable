@@ -45,8 +45,9 @@ $(document).ready(function() {
         $('#form_manage_records').append('<div class="alert-success">' + data.message + '</div>');
       }
 
-      //RELOAD TABLE HERE
-
+      // reload table
+      var table = $('#table_agdq').DataTable();
+      table.ajax.reload();
     });
 
     request.fail(function(jqXHR, textStatus, errorThrown) {

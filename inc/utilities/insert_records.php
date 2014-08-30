@@ -9,7 +9,7 @@ function insertrecords($nrecords){
 
 	$date = new DateTime('2000-01-01 12:00:00');
 
-	$recordsdeleted = 0;
+	$recordsinserted = 0;
 
 	try{
 		include 'get_connected.php';
@@ -24,16 +24,15 @@ function insertrecords($nrecords){
 
 			$stmt->bindParam(":dateandtime", $datestring, PDO::PARAM_STR);
 			$stmt->execute();
-			$recordsdeleted += $stmt->rowCount();
+			$recordsinserted += $stmt->rowCount();
 		}
 	}
 	catch(PDOException $e) {
-		echo 'Something went wrong!';
 		error_log($e->getMessage().PHP_EOL, 3, "errors.log");
 	}
 
 	$dbh -> connection = null;
 
-	return $recordsdeleted;
+	return $recordsinserted;
 }
 ?>
