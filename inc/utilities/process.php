@@ -26,14 +26,20 @@ if (!empty($errors)) {
 }
 else{
 	if (isset($_POST["insert"])) {
-		// DO ALL YOUR FORM PROCESSING HERE
-		// THIS CAN BE WHATEVER YOU WANT TO DO (LOGIN, SAVE, UPDATE, WHATEVER)
+
+		include 'insert_records.php';
+
+		insertrecords();
+
 		$data['success'] = true;
-		$data['message'] = "Inserted {$numberofrecords} records!";
+		$data['message'] = "Inserted {$numberofrecords} record(s)!";
 	} 
 	else if (isset($_POST['delete'])) {
-		// DO ALL YOUR FORM PROCESSING HERE
-		// THIS CAN BE WHATEVER YOU WANT TO DO (LOGIN, SAVE, UPDATE, WHATEVER)
+
+		include 'delete_records.php';
+
+		deleterecords();
+
 		$data['success'] = true;
 		$data['message'] = "Deleted records!";
 	}

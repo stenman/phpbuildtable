@@ -1,0 +1,6 @@
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2000-01-01 13:00:00' for key 'PRIMARY'
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2000-01-01 13:00:00' for key 'PRIMARY'
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2000-01-01 13:00:00' for key 'PRIMARY'
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2000-01-01 13:00:00' for key 'PRIMARY'
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2000-01-01 13:00:00' for key 'PRIMARY'
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2000-01-01 13:00:00' for key 'PRIMARY'

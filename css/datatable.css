@@ -28,3 +28,23 @@
     border-bottom: 2px solid #eeeeee;
     background: linear-gradient(#dfeffc, #eff7fd);
 }
+
+.alert-success{
+    position: relative;
+	float: left;
+    margin: 5px 0px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+	background-color: #99ff99;
+}
+
+.help-block{
+    position: relative;
+	float: left;
+    margin: 5px 0px 0px 5px;
+    padding: 0px 5px 0px 5px;
+    border: 2px solid black;
+    border-radius: 5px 5px 5px 5px;
+	background-color: #ff9999;
+}
